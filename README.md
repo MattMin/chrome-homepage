@@ -104,7 +104,7 @@ chrome-homepage/
 
 1. Clone this repo · 克隆仓库
    ```bash
-   git clone https://github.com/YOUR_USERNAME/chrome-homepage.git
+   git clone https://github.com/MattMin/chrome-homepage.git
    ```
 2. Open `chrome://extensions` in Chrome
 3. Enable **Developer mode** · 开启开发者模式

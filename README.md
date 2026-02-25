@@ -116,9 +116,9 @@ chrome-homepage/
 
 ## Install from Chrome Web Store | 从 Chrome 应用商店安装
 
-> 🛒 **[Install on Chrome Web Store](https://chromewebstore.google.com/detail/YOUR_EXTENSION_ID)**
+> 🛒 **[Install on Chrome Web Store](https://chromewebstore.google.com/detail/gekfgcpieophafbamndbgcepggabmcnb)**
 >
-> 🛒 **[从 Chrome 应用商店安装](https://chromewebstore.google.com/detail/YOUR_EXTENSION_ID)**
+> 🛒 **[从 Chrome 应用商店安装](https://chromewebstore.google.com/detail/gekfgcpieophafbamndbgcepggabmcnb)**
 
 ---
 

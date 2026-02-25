@@ -7,6 +7,12 @@
 ![Chrome Extension](https://img.shields.io/badge/Chrome-MV3_Extension-4285F4?logo=googlechrome&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
+> 🤖 This project is 100% developed by AI.
+>
+> 🤖 本项目 100% 由 AI 开发。
+
+![Screenshot](docs/screenshot.png)
+
 ---
 
 ## Features | 功能
@@ -93,6 +99,8 @@ chrome-homepage/
 │   ├── icon16.png
 │   ├── icon48.png
 │   └── icon128.png
+├── docs/
+│   └── screenshot.png     # Preview screenshot
 └── README.md
 ```
 

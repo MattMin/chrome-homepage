@@ -4,6 +4,7 @@
 >
 > 一个终端美学风格的 Chrome 新标签页扩展。深色 / 浅色主题，极简，实用。
 
+[![Chrome Web Store](https://img.shields.io/chrome-web-store/v/YOUR_EXTENSION_ID?label=Chrome%20Web%20Store&logo=googlechrome&logoColor=white&color=4285F4)](https://chromewebstore.google.com/detail/YOUR_EXTENSION_ID)
 ![Chrome Extension](https://img.shields.io/badge/Chrome-MV3_Extension-4285F4?logo=googlechrome&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
@@ -113,7 +114,15 @@ chrome-homepage/
 
 ---
 
-## Install | 安装
+## Install from Chrome Web Store | 从 Chrome 应用商店安装
+
+> 🛒 **[Install on Chrome Web Store](https://chromewebstore.google.com/detail/YOUR_EXTENSION_ID)**
+>
+> 🛒 **[从 Chrome 应用商店安装](https://chromewebstore.google.com/detail/YOUR_EXTENSION_ID)**
+
+---
+
+## Install Manually (Developer Mode) | 手动安装（开发者模式）
 
 1. Clone this repo · 克隆仓库
    ```bash

@@ -1,8 +1,8 @@
 # Home — CLI-Style Chrome New Tab
 
-> A terminal-aesthetic Chrome new tab extension. Dark theme, minimal, functional.
+> A terminal-aesthetic Chrome new tab extension. Dark / Light theme, minimal, functional.
 >
-> 一个终端美学风格的 Chrome 新标签页扩展。暗色主题，极简，实用。
+> 一个终端美学风格的 Chrome 新标签页扩展。深色 / 浅色主题，极简，实用。
 
 ![Chrome Extension](https://img.shields.io/badge/Chrome-MV3_Extension-4285F4?logo=googlechrome&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-green)
@@ -55,6 +55,11 @@
 - Order persists across sessions via localStorage
 - 四个面板自由拖拽排序，布局自动保存
 
+### Theme Toggle | 主题切换
+- Switch between **Dark** and **Light** theme with one click (☀ / ☾ button in top bar)
+- Theme preference persists across sessions
+- 支持深色 / 浅色主题一键切换，偏好自动保存
+
 ### Settings | 设置
 - Username, search engine, clock format
 - Shortcut categories & links editor
@@ -77,7 +82,7 @@
 
 ## Design | 设计
 
-- **Theme**: Deep dark terminal (#0a0e14) with cyan / green / amber accents
+- **Theme**: Deep dark terminal (#0a0e14) + clean light mode (#f7f8fa), switchable via top-bar toggle
 - **Font**: JetBrains Mono
 - **Layout**: 2×2 responsive grid (single column on mobile)
 - **Effects**: Staggered fade-in animations, subtle CRT scanline overlay

@@ -33,6 +33,78 @@
   --panel-gap: 18px;
 }
 
+/* ── Light Theme ── */
+[data-theme="light"] {
+  --bg-deep:        #f0f1f4;
+  --bg-primary:     #f7f8fa;
+  --bg-panel:       #ffffff;
+  --bg-panel-bar:   #f0f1f5;
+  --bg-hover:       #e8eaef;
+  --bg-input:       #f0f1f5;
+
+  --border:         #d8dbe2;
+  --border-bright:  #c5c9d3;
+
+  --text-primary:   #3a3d45;
+  --text-bright:    #1a1c22;
+  --text-dim:       #9499a5;
+  --text-muted:     #6b7080;
+
+  --cyan:           #0097a7;
+  --green:          #2e8b57;
+  --amber:          #b8860b;
+  --red:            #d32f2f;
+  --blue:           #1565c0;
+  --purple:         #7b1fa2;
+  --magenta:        #c2185b;
+}
+
+[data-theme="light"] .scanline-overlay {
+  display: none;
+}
+
+[data-theme="light"] ::selection {
+  background: rgba(0, 151, 167, 0.18);
+  color: var(--text-bright);
+}
+
+[data-theme="light"] .clock-time {
+  text-shadow: none;
+}
+
+[data-theme="light"] ::-webkit-scrollbar-thumb {
+  background: var(--border-bright);
+}
+[data-theme="light"] ::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted);
+}
+
+[data-theme="light"] .settings-overlay {
+  background: rgba(0, 0, 0, 0.25);
+}
+
+/* ── Theme Toggle ── */
+.theme-toggle {
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  font-family: var(--font);
+  font-size: 0.78rem;
+  padding: 3px 8px;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: all 0.2s;
+  line-height: 1;
+}
+.theme-toggle:hover {
+  color: var(--cyan);
+  border-color: var(--cyan);
+  background: rgba(0, 232, 198, 0.05);
+}
+[data-theme="light"] .theme-toggle:hover {
+  background: rgba(0, 151, 167, 0.08);
+}
+
 /* ── Reset ── */
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 html { font-size: 15px; }

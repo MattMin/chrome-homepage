@@ -44,6 +44,7 @@
     ],
     panelOrder: ['clock', 'ip', 'market', 'shortcuts'],
     clockFormat: 'en',
+    theme: 'dark',
   };
 
   const SEARCH_ENGINES = {
@@ -93,6 +94,7 @@
       market:       Store.get('market', DEFAULTS.market),
       panelOrder:   Store.get('panelOrder', DEFAULTS.panelOrder),
       clockFormat:  Store.get('clockFormat', DEFAULTS.clockFormat),
+      theme:        Store.get('theme', DEFAULTS.theme),
     };
   }
 
@@ -103,6 +105,7 @@
     Store.set('market', cfg.market);
     Store.set('panelOrder', cfg.panelOrder);
     Store.set('clockFormat', cfg.clockFormat);
+    Store.set('theme', cfg.theme);
   }
 
   const $ = function(sel) { return document.querySelector(sel); };
@@ -1061,8 +1064,30 @@
     return el && (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA' || el.tagName === 'SELECT');
   }
 
+  // ════════════════ THEME ════════════════
+  const Theme = {
+    init() {
+      const cfg = getConfig();
+      this.apply(cfg.theme);
+      const btn = $('#btn-theme');
+      if (btn) btn.addEventListener('click', () => this.toggle());
+    },
+    apply(theme) {
+      document.documentElement.setAttribute('data-theme', theme);
+      const btn = $('#btn-theme');
+      if (btn) btn.textContent = theme === 'dark' ? '☀' : '☾';
+    },
+    toggle() {
+      const cfg = getConfig();
+      cfg.theme = cfg.theme === 'dark' ? 'light' : 'dark';
+      Store.set('theme', cfg.theme);
+      this.apply(cfg.theme);
+    },
+  };
+
   // ════════════════ INIT ════════════════
   function init() {
+    Theme.init();
     DragDrop.init();
     Clock.init();
     Search.init();
